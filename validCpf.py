@@ -5,8 +5,8 @@ def validCpf(dig):
     cont_regres = 10
     totalizador = 0
     for index in range(18):
-        if index > 8:
-            index -= 8
+        if index > 8:  # índice vai de 0 a 9
+            index -= 8  # reinicia índice 1 a 10
         totalizador += (cont_regres * int(cpf_gerado[index]))
         cont_regres -= 1
         if cont_regres < 2:
@@ -19,4 +19,3 @@ def validCpf(dig):
     return cpf_gerado == cpf_recebido
 
 
-print(validCpf(47756855205))
