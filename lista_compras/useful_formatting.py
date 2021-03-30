@@ -4,7 +4,7 @@ def brl(num):
     return text
 
 
-#  Exemplo: "Macarrão ...............R$ 3.00"
+#  Exemplo: "Produto ...............R$ 3.00"
 def texto_tabulado(txt, num):
     texto = txt
     linha = f'{texto}{"":.>{26-len(texto)}}{brl(num)}'
