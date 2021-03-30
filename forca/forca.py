@@ -7,7 +7,7 @@ preenchimento = list('_' * len(palavra_escol))
 palpite, digitadas , erros = 0, '', 0
 while preenchimento != palavra_escol:
     while True:
-        usuario_letra = str(input('digite uma letra: ')).strip().lower()
+        usuario_letra = str(input('digite uma letra: ')).strip().lower()[0]
         digitadas += ' ' + usuario_letra
         if len(usuario_letra) == 1:
             break
@@ -16,6 +16,7 @@ while preenchimento != palavra_escol:
     for index, lt in enumerate(palavra_escol):
         if usuario_letra == lt:
             preenchimento[index] = usuario_letra
+
     palavra = ''.join(preenchimento)
     print(palavra)
     if not usuario_letra in palavra:
