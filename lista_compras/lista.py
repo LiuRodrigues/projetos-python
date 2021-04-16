@@ -10,15 +10,16 @@ while c == 0:
     c = int(input('Quer continuar?'))
 
 titulo = cab_linhas('LISTAGEM DE COMPRAS', '=')
-print(f'{titulo}\n{"COD"} {"PRODUTO"} {"QTD": >25}')
+print(f'{titulo}\n{"COD PRODUTO"} {"QTD": >25}')
 
 for pos, nome in enumerate(produtos):
     print(f'{pos + 1:0>3}', nome)
 print(lin('-', 38))
 
+print(produtos)
 with open('lista.txt', 'w') as arquivo:
     arquivo.write(str(cab_linhas('LISTAGEM DE COMPRAS', '=')))
-    arquivo.write('\n{} {}{: >25}'.format('COD', 'PRODUTO', 'QTD') + '\n')
+    arquivo.write('\n{} {}{: >25}'.format('COD', 'PRODUTO', 'QTDE') + '\n')
     arquivo.write(lin('-', 38) + '\n')
 
     for pos, valor in enumerate(produtos):
