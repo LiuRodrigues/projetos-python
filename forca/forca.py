@@ -18,7 +18,7 @@ while preenchimento != palavra_escol:
             preenchimento[index] = usuario_letra
 
     palavra = ''.join(preenchimento)
-    print(palavra)
+    print(*preenchimento)
     if not usuario_letra in palavra:
         erros += 1
     print(bonequinho.animar()[erros])
