@@ -13,6 +13,3 @@ def lin(tipo, qu):
     linha = tipo * qu
     return f'{linha}'
 
-
-
-
