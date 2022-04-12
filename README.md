@@ -1,5 +1,5 @@
 # Pequenos programas em linguagem python by Liu.
-1 Validador de CPFs.
-2 Gerador de CPFs.
-3 Jogo da forca
-3 Lista de compras.
+* Validador de CPFs.<br>
+* Gerador de CPFs.<br>
+* Jogo da forca<br>
+* Lista de compras.
